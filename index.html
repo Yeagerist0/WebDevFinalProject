@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Gallery with JavaScript | Unsplash API</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Lightbox for Image Preview -->
+    <div class="lightbox">
+      <div class="wrapper">
+        <header>
+          <div class="photographer">
+            <i class="uil uil-camera"></i>
+            <span></span> <!-- Photographer's name will be added dynamically -->
+          </div>
+          <div class="buttons">
+            <i class="uil uil-import" id="downloadImgBtn" data-img=""></i> <!-- Download button -->
+            <i class="close-icon uil uil-times"></i> <!-- Close button -->
+          </div>
+        </header>
+        <div class="preview-img">
+          <div class="img"><img src="" alt="preview-img"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Section -->
+    <section class="search">
+      <img src="./images/search-img.jpg" alt="search-img">
+      <div class="content">
+        <h1>Image Gallery with JavaScript</h1>
+        <p>Search and download any images within seconds</p>
+        <div class="search-box">
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Search images">
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <ul class="images"></ul> <!-- Images will be dynamically inserted here -->
+      <button class="load-more">Load More</button>
+    </section>
+  </body>
+</html>
